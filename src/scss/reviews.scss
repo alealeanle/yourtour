@@ -1,0 +1,94 @@
+.reviews {
+	&__container {
+	}
+	&__header {
+	}
+	&__body {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+		gap: 30px;
+		@media (max-width: $md2+px) {
+			gap: 18px;
+		}
+		@media (max-width: $md5+px) {
+			gap: 8px;
+		}
+	}
+	&__item {
+	}
+}
+.review {
+	flex: 0 1 48.7%;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	background-color: $beige200;
+	border-radius: 50px;
+	padding: 40px;
+	@media (max-width: $md2+px) {
+		flex: 0 1 49%;
+	}
+	@media (max-width: 928px) {
+		flex: 0 1 48%;
+	}
+	@media (max-width: $md4+px) {
+		flex: 0 1 100%;
+	}
+	@media (max-width: $md5+px) {
+		border-radius: 20px;
+		padding: 25px 20px 30px;
+	}
+	&__text {
+		font-size: 23px;
+		line-height: 122%;
+		font-weight: 700;
+		margin-bottom: 70px;
+		@media (max-width: $md5+px) {
+			font-size: 16px;
+			line-height: 142%;
+			margin-bottom: 40px;
+		}
+	}
+	&__bottom {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		@media (max-width: $md5+px) {
+			align-items: end;
+		}
+	}
+	&__description {
+	}
+	&__name {
+		font-size: 35px;
+		font-weight: 500;
+		line-height: 122%;
+		margin-bottom: 8px;
+		@media (max-width: $md5+px) {
+			font-size: 23px;
+			line-height: 120%;
+			letter-spacing: 0.92px;
+		}
+	}
+	&__tour {
+		font-size: 17px;
+		line-height: 142%;
+		letter-spacing: -0.17px;
+		color: $gray300;
+		@media (max-width: $md5+px) {
+			font-size: 16px;
+			line-height: 142%;
+			letter-spacing: -0.16px;
+		}
+	}
+	&__photo {
+		width: 75px;
+		border-radius: 100px;
+	}
+}
+._rew {
+	@media (max-width: $md5+px) {
+		padding: 5px 3px 0px 0px;
+	}
+}

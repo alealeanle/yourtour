@@ -1,0 +1,91 @@
+.main-block {
+	background: linear-gradient(180deg, rgba(0, 0, 0, 0.40) 0%, rgba(0, 0, 0, 0.00) 39.9%), linear-gradient(0deg, rgba(0, 0, 0, 0.30) 0%, rgba(0, 0, 0, 0.30) 100%), url(../img/background.jpg) lightgray 50% / cover no-repeat;
+	padding: 207px 0px 119px;
+	@media (max-width: $md3+px) {
+		padding: 150px 0px 100px;
+	}
+	@media (max-width: $md4+px) {
+		padding: 142px 0px 52px;
+		margin-bottom: 75px;
+	}
+	&__container {
+	}
+	&__title {
+		margin: 0px auto 50px;
+		font-size: 96px;
+		font-weight: 700;
+		line-height: 109%;
+		letter-spacing: 1.92px;
+		text-align: center;
+		color: $white;
+		@media (max-width: $md3+px) {
+			font-size: 76px;
+		}
+		@media (max-width: $md4+px) {
+			font-size: 48px;
+		}
+		@media (max-width: $md5+px) {
+			margin: 0px auto 40px;
+			font-size: 34px;
+			line-height: 112%;
+			letter-spacing: 0.68px;
+		}
+	}
+	&__text {
+		margin: 0px 304px 50px;
+		font-size: 20px;
+		line-height: 142%;
+		text-align: center;
+		color: $white;
+		@media (max-width: $md2+px) {
+			margin: 0px 238px 50px;
+		}
+		@media (max-width: 812px) {
+			margin: 0px 200px 50px;
+		}
+		@media (max-width: $md4+px) {
+			font-size: 18px;
+			margin: 0px 200px 50px;
+		}
+		@media (max-width: 624px) {
+			font-size: 16px;
+			margin: 0px 120px 50px;
+		}
+		@media (max-width: $md5+px) {
+			margin: 0px 37px 40px;
+		}
+	}
+	&__button {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		text-align: center;
+		font-size: 17px;
+		line-height: 142%;
+		letter-spacing: -0.17px;
+		color: $black;
+		margin: 0px auto 0px;
+		padding: 5px 20px;
+		background-color: $white;
+		max-width: 118px;
+		min-height: 34px;
+		border-radius: 10px;
+		transition: all 0.3s ease 0s;
+		@media (max-width: $md5+px) {
+			font-size: 16px;
+			letter-spacing: -0.16px;
+			max-width: 114px;
+			min-height: 33px;
+		}
+		@media (any-hover: hover) {
+			&:hover {
+				color: $white;
+				background-color: $orange200;
+			}
+		}
+		&:active {
+			color: $black;
+			background-color: $orange100;
+		}
+	}
+}

@@ -1,0 +1,58 @@
+@import "fonts";
+@import "icons";
+
+$minWidth: 320px;
+$maxWidth: 1920;
+$maxWidthContainer: 1200;
+$md1: $maxWidthContainer + 12;
+$md2: 1279.98;
+$md3: 991.98;
+$md4: 767.98;
+$md5: 479.98;
+
+
+$black: #1B1F2B;
+$white: #FFF;
+$orange200: #EFA501;
+$orange100: #F8E6BE;
+$green400: #286562;
+$green300: #3B7E7B;
+$green200: #627F7E;
+$green100: #E0F0E5;
+$gray300: #A6A6A6;
+$gray200: #D9DFDB;
+$gray100: #F1F3F2;
+$beige200: #F4F0E9;
+$bgColor: #F9F7F4;
+
+@import "null";
+
+.wrapper {
+	width: 100%;
+	min-height: 100%;
+	overflow: hidden;
+	display: flex;
+	flex-direction: column;
+}
+
+._container {
+	max-width: $maxWidthContainer + px;
+	padding: 0px 15px;
+	margin: 0 auto;
+	@media (max-width: $md2+px) {
+		max-width: 948px;
+	}
+	@media (max-width: $md5+px) {
+		max-width: 350px;
+	}
+}
+
+@import "headers-blocks";
+
+@import "header";
+@import "page";
+@import "main-block";
+@import "choose";
+@import "create";
+@import "reviews";
+@import "footer";

@@ -1,0 +1,139 @@
+.header {
+	position: absolute;
+	width: 100%;
+	top: 0;
+	left: 2px;
+	z-index: 50;
+	@media (max-width: $md2+px) {
+		left: 5px;
+	}
+	@media (max-width: $md3+px) {
+		left: 0;
+	}
+	&__container {
+		display: flex;
+		align-items: center;
+		min-height: 88px;
+		@media (max-width: $md3+px) {
+			justify-content: space-between;
+		}
+		@media (max-width: $md4+px) {
+			justify-content: space-around;
+		}
+		@media (max-width: $md5+px) {
+			justify-content: space-between;
+		}
+	}
+	&__logo {
+		margin: 0px 181.58px 0px 0px;
+		@media (max-width: $md2+px) {
+		margin: 0px 82.58px 0px 0px;
+		}
+		@media (max-width: 892px) {
+		margin: 0px 40px 0px 0px;
+		}
+		@media (max-width: 326px) {
+		margin: 0px 30px 0px 0px;
+		}
+	}
+	&__logoImg {
+		@media (max-width: 892px) {
+			width: 133px;
+		}
+		@media (max-width: $md4+px) {
+			width: 100%;
+		}
+		@media (max-width: $md5+px) {
+			width: 133px;
+		}
+	}
+	&__logoDarkImg{
+		display: none;
+		@media (max-width: 892px) {
+			width: 133px;
+		}
+		@media (max-width: $md4+px) {
+			width: 100%;
+		}
+		@media (max-width: $md5+px) {
+			width: 133px;
+		}
+	}
+	&__menu {
+		&:not(:last-child) {
+			margin: 0px 181.58px 0px 0px;
+			@media (max-width: $md2+px) {
+			margin: 0px 82.58px 0px 0px;
+			}
+			@media (max-width: 892px) {
+			margin: 0px 40px 0px 0px;
+			}
+		}
+	}
+	&__tel {
+		color: $white;
+		font-size: 20px;
+		line-height: 142%;
+		@media (any-hover: hover) {
+			&:hover {
+				text-decoration: underline;
+			}
+		}
+		@media (max-width: $md3+px) {
+			font-size: 18px;
+		}
+		@media (max-width: $md4+px) {
+			font-size: 20px;
+		}
+		@media (max-width: $md5+px) {
+			font-size: 16px;
+		}
+	}
+}
+.menu {
+	@media (max-width: $md4+px) {
+		display: none;
+	}
+	&__list {
+		display: flex;
+	}
+	&__item {
+		&:not(:last-child) {
+			margin: 0px 50px 0px 0px;
+			@media (max-width: $md2+px) {
+			margin: 0px 30px 0px 0px;
+			}
+		}
+	}
+	&__link {
+		color: $white;
+		font-size: 20px;
+		line-height: 142%;
+		@media (max-width: $md3+px) {
+			font-size: 18px;
+		}
+		@media (max-width: $md4+px) {
+			font-size: 16px;
+		}
+		@media (any-hover: hover) {
+			&:hover {
+				border-bottom: 1px solid $white;
+			}
+		}
+	}
+}
+._fixed {
+	position: fixed;
+	backdrop-filter: blur(27px);
+	left: 0;
+	top: -100px;
+	transition: all 1s ease 0s;
+	& a {
+		color: $black;
+	}
+	@media (any-hover: hover) {
+		& ul a:hover {
+			border-bottom: 1px solid $black;
+		}
+	}
+}

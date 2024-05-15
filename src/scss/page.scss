@@ -1,0 +1,17 @@
+.page {
+	flex: 1 1 auto;
+	&>* {
+		margin-bottom: 135px;
+		@media (max-width: $md4+px) {
+			margin-bottom: 75px;
+		}
+	}
+	&__main-block{
+	}
+	&__choose {
+	}
+	&__create {
+	}
+	&__reviews{
+	}
+ }
