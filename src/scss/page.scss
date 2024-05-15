@@ -13,5 +13,10 @@
 	&__create {
 	}
 	&__reviews{
+		@media (max-width: $md4+px) {
+			margin-bottom: 70px;
+		}
+	}
+	&__gallery {
 	}
  }

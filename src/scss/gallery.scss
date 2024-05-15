@@ -1,0 +1,85 @@
+.gallery {
+	&__container {
+	}
+	&__header {
+		@media (max-width: $md5+px) {
+			margin: 0px 0px 47px;
+		}
+	}
+	&__body {
+		padding: 0px 30px;
+		@media (max-width: $md2+px) {
+			padding: 0px 20px;
+		}
+		@media (max-width: $md5+px) {
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+		}
+		@media (max-width: 340px) {
+			display: block;
+		}
+	}
+	&__row{
+		display: flex;
+		flex-direction: row;
+		border-radius: 50px;
+		gap: 30px;
+		@media (max-width: $md2+px) {
+			gap: 18px;
+		}
+		@media (max-width: $md5+px) {
+			gap: 10px;
+		}
+		&:not(:last-child) {
+			margin-bottom: 29px;
+			@media (max-width: $md5+px) {
+				margin-bottom: 18px;
+			}
+		}
+		&_odd {
+			& div {
+				width: 442.5px;
+				@media (max-width: $md5+px) {
+					width: 154px;
+				}
+			}
+		}
+		&_even {
+			& div {
+				width: 348px;
+				@media (max-width: $md5+px) {
+					width: 100px;
+				}
+			}
+		}
+	}
+	&__item {
+		height: 301px;
+		border-radius: 50px;
+		@media (max-width: $md5+px) {
+			height: 110px;
+			border-radius: 20px;
+		}
+	}
+	&__img {
+		width: 100%;
+		height: 100%;
+		object-fit: cover;
+		border-radius: 50px;
+		@media (max-width: $md5+px) {
+			border-radius: 20px;
+		}
+	}
+}
+._1024none {
+	@media (max-width: $md2+px) {
+		display: none;
+	}
+}
+._360none {
+	@media (max-width: $md4+px) {
+		display: none;
+	}
+}
+
