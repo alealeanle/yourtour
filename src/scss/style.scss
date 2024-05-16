@@ -48,6 +48,7 @@ $bgColor: #F9F7F4;
 }
 
 @import "headers-blocks";
+@import "card";
 
 @import "header";
 @import "page";
@@ -56,4 +57,5 @@ $bgColor: #F9F7F4;
 @import "create";
 @import "reviews";
 @import "gallery";
+@import "histories";
 @import "footer";

@@ -1,0 +1,68 @@
+.histories {
+	&__header {
+	}
+	&__body {
+	}
+}
+.body-histories {
+	@media (max-width: $md5+px) {
+		margin-top: 52px;
+	}
+	&__item {
+		position: relative;
+		margin-bottom: 50px;
+		overflow: hidden;
+		border-radius: 50px;
+		@media (max-width: $md5+px) {
+			margin-bottom: 20px;
+			border-radius: 20px;
+		}
+		@media (any-hover: hover) {
+			&:hover img {
+				scale: 1.2;
+			}
+		}
+		@media (any-hover: hover) {
+			&:hover .card__details:before {
+				content: "";
+				left: -20px;
+				width: 199px;
+				height: 42px;
+				position: absolute;
+				z-index: -1;
+				background-color: $green400;
+				border-radius: 50px;
+			}
+		}
+		&:active .card__details:before {
+			content: "";
+			left: -20px;
+			width: 199px;
+			height: 42px;
+			position: absolute;
+			z-index: -1;
+			background-color: $orange200;
+			border-radius: 50px;
+		}
+	}
+	&__card {
+		min-height: 567px;
+		padding: 60px;
+		background: linear-gradient(270deg, rgba(0, 0, 0, 0) 0.01%, rgba(0, 0, 0, 0.2) 100%);
+		@media (max-width: $md4+px) {
+			padding: 45px;
+		}
+		@media (max-width: $md4+px) {
+			padding: 30px;
+		}
+		@media (max-width: $md4+px) {
+			min-height: 455px;
+		}
+	}
+}
+
+._historiesCardTitle {
+	@media (max-width: $md5+px) {
+		max-width: 130px;
+	}
+}

@@ -1,0 +1,127 @@
+.card {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	padding: 50px;
+	border-radius: 50px;
+	position: relative;
+	z-index: 2;
+	cursor: pointer;
+	@media (max-width: $md5+px) {
+		padding: 25px;
+		border-radius: 20px;
+	}
+	&__main {
+		padding-bottom: 20px;
+	}
+	&__title {
+		font-size: 35px;
+		font-weight: 500;
+		line-height: 122%;
+		color: $white;
+		@media (min-width: $md2+px) {
+			margin-right: 50px;
+		}
+		@media (max-width: $md5+px) {
+			font-size: 23px;
+			font-weight: 700;
+			line-height: 120%;
+			letter-spacing: 0.92px;
+			margin-bottom: 13px;
+		}
+	}
+	&__price {
+		font-size: 17px;
+		line-height: 142%;
+		letter-spacing: -0.17px;
+		color: $white;
+		margin-top: 16px;
+		@media (max-width: $md5+px) {
+			font-size: 16px;
+			letter-spacing: -0.16px;
+			margin-top: 13px;
+		}
+	}
+	&__text{
+		max-width: 554px;
+		font-size: 20px;
+		line-height: 142%;
+		color: $white;
+		margin-top: 36px;
+		@media (max-width: $md4+px) {
+			font-size: 16px;
+		}
+		@media (max-width: $md5+px) {
+			margin-top: 20px;
+		}
+	}
+	&__list {
+	margin-top: 25px;
+	margin-left: 30px;
+	@media (max-width: $md2+px) {
+		margin-top: 26px;
+	}
+	@media (max-width: $md4+px) {
+		margin-left: 26px;
+	}
+	}
+	&__item {
+		list-style: disc;
+	}
+	&__bottom {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+	}
+	&__details {
+		width: 199px;
+		display: flex;
+		align-items: center;
+		font-size: 23px;
+		line-height: 122%;
+		font-weight: 700;
+		color: $white;
+		border-radius: 50px;
+		position: relative;
+		@media (max-width: $md5+px) {
+			font-size: 16px;
+			line-height: 142%;
+		}
+	}
+	&__social {
+		display: flex;
+		gap: 37px;
+		@media (max-width: $md4+px) {
+			gap: 23px;
+		}
+		@media (max-width: 627px) {
+			display: none;
+		}
+	}
+	&__site {
+		font-size: 20px;
+		line-height: 142%;
+		color: $white;
+		@media (max-width: $md4+px) {
+			font-size: 16px;
+		}
+		@media (any-hover: hover) {
+			&:hover {
+				text-decoration: underline;
+			}
+		}
+	}
+	&__image {
+		position: absolute;
+		width: 100%;
+		height: 100%;
+		top: 0;
+		left: 0;
+		object-fit: cover;
+		border-radius: 50px;
+		transition: scale 0.3s ease 0s;
+		@media (max-width: $md5+px) {
+			border-radius: 20px;
+		}
+	}
+}
