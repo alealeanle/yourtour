@@ -6,6 +6,7 @@
 		justify-content: center;
 		min-height: 88px;
 		@media (max-width: 813px) {
+			min-height: 95px;
 			flex-direction: column;
 		}
 	}
@@ -32,9 +33,6 @@
 }
 .socials-footer {
 	display: flex;
-	@media (max-width: 813px) {
-	margin: 0px 0px 21px 0px;
-	}
 	& a {
 		display: flex;
 		align-items: center;

@@ -12,9 +12,12 @@
 							</div>
 							<div class="form-create__item">
 								<label for="form-create-dest" class="form-create__label _icon-dropdown">Направление</label>
-								<select id="form-create-dest" name="dest" class="form-create__input">
-									<option value="" disabled selected>Куда хотите ехать</option>
+								<select required id="form-create-dest" name="dest" class="form-create__input _w">
+									<option value="" disabled selected></option>
+									<option value="Путешествие в горы">Путешествие в горы</option>
+									<option value="Автостопом в Стамбул">Автостопом в Стамбул</option>
 								</select>
+								<div class="form-create__dest-placeholder">Куда хотите ехать</div>
 							</div>
 							<div class="form-create__item">
 								<label for="form-create-mail" class="form-create__label">Email</label>
@@ -27,6 +30,7 @@
 							<div class="form-create__item">
 								<label for="form-create-date-from" class="form-create__label">Дата от</label>
 								<input type="date" id="form-create-date-from" name="date-from" class="form-create__input">
+								<div class="form-create__date-placeholder">ДД.ММ.ГГГГ</div>
 							</div>
 							<div class="form-create__item">
 								<label for="form-create-date-to" class="form-create__label">Дата до</label>
