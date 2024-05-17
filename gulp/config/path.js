@@ -20,7 +20,7 @@ export const path = {
 		scss: `${srcFolder}/scss/style.scss`,
 		html: `${srcFolder}/*.html`, // смотрим только за файлом в корне; либо .pug
 		files: `${srcFolder}/files/**/*.*`, // ** любая вложенность внутри files и *.* любые вайлы
-		svgicons: `${srcFolder}/svgicons/*.svg`,
+		// svgicons: `${srcFolder}/img/svg/*.svg`,
 	},
 	watch: {
 		js: `${srcFolder}/js/**/*.js`,

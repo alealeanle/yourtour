@@ -87,18 +87,18 @@
 		height: 75px;
 		border-radius: 100px;
 		&_1 {
-			background: url(../img/reviews/review\ 1.jpg) lightgray -21.313px 0px / 149.953% 100% no-repeat;
+			background: url(../img/reviews/review_1.jpg) lightgray -21.313px 0px / 149.953% 100% no-repeat;
 			background-size: cover;
 			background-position: center;
 		}
 		&_2 {
-			background: url(../img/reviews/review\ 2.jpg) lightgray 0px -4.492px / 100% 150% no-repeat;
+			background: url(../img/reviews/review_2.jpg) lightgray 0px -4.492px / 100% 150% no-repeat;
 			background-size: cover;
 			background-position: center;
 		}
 	}
 }
-._rew {
+._rev {
 	@media (max-width: $md5+px) {
 		padding: 5px 3px 0px 0px;
 	}

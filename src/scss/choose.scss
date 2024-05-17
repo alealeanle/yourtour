@@ -24,7 +24,7 @@
 		gap: 20px;
 	}
 	@media (max-width: $md4+px) {
-		margin: 29px 31.5px 0px; //////////////////////////
+		margin: 29px 31.5px 0px;
 		gap: 10px;
 	}
 	&__item {
@@ -74,33 +74,6 @@
 		flex: 0 1 31.6%;
 		overflow: hidden;
 		border-radius: 50px;
-		@media (any-hover: hover) {
-			&:hover img {
-				scale: 1.2;
-			}
-		}
-		@media (any-hover: hover) {
-			&:hover .card__details:before {
-				content: "";
-				left: -20px;
-				width: 199px;
-				height: 42px;
-				position: absolute;
-				z-index: -1;
-				background-color: $green400;
-				border-radius: 50px;
-			}
-		}
-		&:active .card__details:before {
-			content: "";
-			left: -20px;
-			width: 199px;
-			height: 42px;
-			position: absolute;
-			z-index: -1;
-			background-color: $orange200;
-			border-radius: 50px;
-		}
 		@media (max-width: $md2+px) {
 			flex: 0 1 49%;
 		}

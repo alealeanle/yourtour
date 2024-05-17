@@ -17,33 +17,6 @@
 			margin-bottom: 20px;
 			border-radius: 20px;
 		}
-		@media (any-hover: hover) {
-			&:hover img {
-				scale: 1.2;
-			}
-		}
-		@media (any-hover: hover) {
-			&:hover .card__details:before {
-				content: "";
-				left: -20px;
-				width: 199px;
-				height: 42px;
-				position: absolute;
-				z-index: -1;
-				background-color: $green400;
-				border-radius: 50px;
-			}
-		}
-		&:active .card__details:before {
-			content: "";
-			left: -20px;
-			width: 199px;
-			height: 42px;
-			position: absolute;
-			z-index: -1;
-			background-color: $orange200;
-			border-radius: 50px;
-		}
 	}
 	&__card {
 		min-height: 567px;

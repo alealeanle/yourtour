@@ -39,6 +39,11 @@
 		font-size: 20px;
 		line-height: 142%;
 		color: $black;
+		@media (any-hover: hover) {
+			&:hover span {
+				text-decoration: underline;
+			}
+		}
 		@media (max-width: $md5+px) {
 			font-size: 16px;
 		}
