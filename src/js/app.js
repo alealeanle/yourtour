@@ -33,6 +33,8 @@ const menuLinks = document.querySelectorAll('.menu-block__item');
 menuList.addEventListener('click', (e) => {
 	e.preventDefault();
 	let link = e.target;
-	menuLinks.forEach(el => el.classList.remove('_active'));
-	link.classList.add('_active');
+	if (!link.classList.contains('menu-block')) {
+		menuLinks.forEach(el => el.classList.remove('_active'));
+		link.classList.add('_active');
+	}
 })
