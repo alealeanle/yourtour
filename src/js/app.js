@@ -38,3 +38,21 @@ menuList.addEventListener('click', (e) => {
 		link.classList.add('_active');
 	}
 })
+
+/////     ANCHORS     ///////////////////////////////////////////////
+
+function smoothScrollWithOffset(event) {
+	event.preventDefault();
+	const targetId = event.currentTarget.getAttribute("href").substring(1);
+	const targetElement = document.getElementById(targetId);
+	const offset = 88;
+	const targetPosition = targetElement.getBoundingClientRect().top + window.pageYOffset - offset;
+	window.scrollTo({
+			top: targetPosition,
+			behavior: 'smooth'
+	});
+}
+
+document.querySelectorAll('.menu__link').forEach(anchor => {
+	anchor.addEventListener('click', smoothScrollWithOffset);
+});

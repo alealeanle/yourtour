@@ -67,7 +67,13 @@
 		padding: 20px;
 		font-size: 20px;
 		line-height: 142%;
+		@media (any-hover: hover) {
+			&:hover {
+				background-color: $beige200;
+			}
+		}
 		&:focus {
+			background-color: $beige200;
 			outline: 1px solid $gray300;
 		}
 		@media (max-width: $md4+px) {
@@ -84,7 +90,6 @@
 			appearance: none;
 		}
 		&[type="date"] {
-			width: 100%;
 			position: relative;
 			cursor: text;
 			text-transform: uppercase;
@@ -97,7 +102,7 @@
 			&::-webkit-calendar-picker-indicator {
 				cursor: pointer;
 				width: 100%;
-				left: -1.5em;
+				left: 0;
 				background: none;
 				position: absolute;
 			} 
@@ -117,7 +122,7 @@
 		position: absolute;
 		pointer-events: none;
 		color: $gray300;
-		background-color: $bgColor;
+		background-color: transparent;
 		top: 56px;
 		left: 16px;
 		@media (max-width: $md4+px) {
