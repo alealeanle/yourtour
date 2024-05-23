@@ -10,6 +10,7 @@
 		}
 	}
 	&__body {
+		width: 100%;
 		padding: 0px 30px;
 		@media (max-width: $md2+px) {
 			padding: 0px 20px;
