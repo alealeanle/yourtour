@@ -23,13 +23,11 @@
 		padding: 60px;
 		background: linear-gradient(270deg, rgba(0, 0, 0, 0) 0.01%, rgba(0, 0, 0, 0.2) 100%);
 		@media (max-width: $md4+px) {
+			min-height: 455px;
 			padding: 45px;
 		}
-		@media (max-width: $md4+px) {
+		@media (max-width: $md5+px) {
 			padding: 30px;
-		}
-		@media (max-width: $md4+px) {
-			min-height: 455px;
 		}
 	}
 }
