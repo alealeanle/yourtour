@@ -29,6 +29,18 @@
 			padding-bottom: 40px;
 		}
 	}
+	&__row {
+		display: flex;
+		gap: 30px;
+		width: 100%;
+		@media (max-width: $md2+px) {
+			gap: 20px;
+		}
+		@media (max-width: $md4+px) {
+			flex-wrap: wrap;
+			gap: 29.7px;
+		}
+	}
 	&__item {
 		position: relative;
 		flex: 0 1 48.399%;
@@ -63,6 +75,7 @@
 		height: 68px;
 		color: $black;
 		background-color: $bgColor;
+		outline: 1px solid $beige200;
 		border-radius: 10px;
 		padding: 20px;
 		font-size: 20px;

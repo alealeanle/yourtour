@@ -52,6 +52,7 @@ function smoothScrollWithOffset(event) {
 			behavior: 'smooth'
 	});
 }
+document.querySelector('.header__logo').addEventListener('click', smoothScrollWithOffset);
 
 document.querySelectorAll('.menu__link').forEach(anchor => {
 	anchor.addEventListener('click', smoothScrollWithOffset);

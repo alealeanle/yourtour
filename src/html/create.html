@@ -6,35 +6,41 @@
 						</div>
 						<div class="create__form form-create">
 							<form action="#" id="form-create" class="form-create__body">
-								<div class="form-create__item">
-									<label for="form-create-label" class="form-create__label">Имя</label>
-									<input type="text" id="form-create-label" name="name" class="form-create__input" placeholder="Введите Ваше имя">
+								<div class="form-create__row">
+									<div class="form-create__item">
+										<label for="form-create-label" class="form-create__label">Имя</label>
+										<input type="text" id="form-create-label" name="name" class="form-create__input" placeholder="Введите Ваше имя">
+									</div>
+									<div class="form-create__item">
+										<label for="form-create-dest" class="form-create__label _icon-dropdown">Направление</label>
+										<select required id="form-create-dest" name="dest" class="form-create__input _w">
+											<option value="" disabled selected></option>
+											<option value="Путешествие в горы">Путешествие в горы</option>
+											<option value="Автостопом в Стамбул">Автостопом в Стамбул</option>
+										</select>
+										<div class="form-create__dest-placeholder">Куда хотите ехать</div>
+									</div>
 								</div>
-								<div class="form-create__item">
-									<label for="form-create-dest" class="form-create__label _icon-dropdown">Направление</label>
-									<select required id="form-create-dest" name="dest" class="form-create__input _w">
-										<option value="" disabled selected></option>
-										<option value="Путешествие в горы">Путешествие в горы</option>
-										<option value="Автостопом в Стамбул">Автостопом в Стамбул</option>
-									</select>
-									<div class="form-create__dest-placeholder">Куда хотите ехать</div>
+								<div class="form-create__row">
+									<div class="form-create__item">
+										<label for="form-create-mail" class="form-create__label">Email</label>
+										<input type="email" id="form-create-mail" name="email" class="form-create__input" placeholder="example@mail.com">
+									</div>
+									<div class="form-create__item">
+										<label for="form-create-tel" class="form-create__label">Телефон</label>
+										<input type="tel" id="form-create-tel" name="tel" class="form-create__input" placeholder="+ 7 ( _ _ _ ) _ _ _ - _ _ - _ _">
+									</div>
 								</div>
-								<div class="form-create__item">
-									<label for="form-create-mail" class="form-create__label">Email</label>
-									<input type="email" id="form-create-mail" name="email" class="form-create__input" placeholder="example@mail.com">
-								</div>
-								<div class="form-create__item">
-									<label for="form-create-tel" class="form-create__label">Телефон</label>
-									<input type="tel" id="form-create-tel" name="tel" class="form-create__input" placeholder="+ 7 ( _ _ _ ) _ _ _ - _ _ - _ _">
-								</div>
-								<div class="form-create__item">
-									<label for="form-create-date-from" class="form-create__label">Дата от</label>
-									<input type="date" id="form-create-date-from" name="date-from" class="form-create__input">
-									<div class="form-create__date-placeholder">ДД.ММ.ГГГГ</div>
-								</div>
-								<div class="form-create__item">
-									<label for="form-create-date-to" class="form-create__label">Дата до</label>
-									<input type="date" id="form-create-date-to" name="date-to" class="form-create__input">
+								<div class="form-create__row">
+									<div class="form-create__item">
+										<label for="form-create-date-from" class="form-create__label">Дата от</label>
+										<input type="date" id="form-create-date-from" name="date-from" class="form-create__input">
+										<div class="form-create__date-placeholder">ДД.ММ.ГГГГ</div>
+									</div>
+									<div class="form-create__item">
+										<label for="form-create-date-to" class="form-create__label">Дата до</label>
+										<input type="date" id="form-create-date-to" name="date-to" class="form-create__input">
+									</div>
 								</div>
 								<div class="form-create__item">
 									<label for="form-create-coment" class="form-create__label">Комментарий</label>
