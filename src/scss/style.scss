@@ -5,10 +5,10 @@ $minWidth: 320px;
 $maxWidth: 1920;
 $maxWidthContainer: 1200;
 $md1: $maxWidthContainer + 12;
-$md2: 1279.98;
-$md3: 991.98;
-$md4: 767.98;
-$md5: 479.98;
+$md2: 1280;
+$md3: 992;
+$md4: 767;
+$md5: 480;
 
 
 $black: #1B1F2B;
@@ -42,7 +42,7 @@ $bgColor: #F9F7F4;
 	@media (max-width: $md2+px) {
 		max-width: 948px;
 	}
-	@media (max-width: $md5+px) {
+	@media (max-width: 360px) {
 		max-width: 350px;
 	}
 }

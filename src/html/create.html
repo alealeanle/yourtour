@@ -28,18 +28,17 @@
 									</div>
 									<div class="form-create__item">
 										<label for="form-create-tel" class="form-create__label">Телефон</label>
-										<input type="tel" id="form-create-tel" name="tel" class="form-create__input" placeholder="+ 7 ( _ _ _ ) _ _ _ - _ _ - _ _">
+										<input type="tel" maxlength="11" pattern="[0-9]{10,11}" id="form-create-tel" name="tel" class="form-create__input" placeholder="+ 7 ( _ _ _ ) _ _ _ - _ _ - _ _">
 									</div>
 								</div>
 								<div class="form-create__row">
 									<div class="form-create__item">
 										<label for="form-create-date-from" class="form-create__label">Дата от</label>
-										<input type="date" id="form-create-date-from" name="date-from" class="form-create__input">
-										<div class="form-create__date-placeholder">ДД.ММ.ГГГГ</div>
+										<input type="date" min="2024-03-03" max="2025-03-03" id="form-create-date-from" name="date-from" class="form-create__input">
 									</div>
 									<div class="form-create__item">
 										<label for="form-create-date-to" class="form-create__label">Дата до</label>
-										<input type="date" id="form-create-date-to" name="date-to" class="form-create__input">
+										<input type="date" min="2024-03-03" max="2025-03-03" id="form-create-date-to" name="date-to" class="form-create__input">
 									</div>
 								</div>
 								<div class="form-create__item">

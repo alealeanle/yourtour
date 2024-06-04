@@ -67,14 +67,29 @@
 		}
 	}
 	&__mail {
+		position: relative;
 		color: $black;
+		&:after {
+			content: "";
+			position: absolute;
+			width: 100%;
+			height: 100%;
+			left: 0;
+			border-bottom: 1px solid transparent;
+			transition: all 0.3s ease 0s;
+		}
 		@media (any-hover: hover) {
 			&:hover {
-				text-decoration: underline;
+				&:after {
+					border-bottom: 1px solid $black;
+				}
 			}
 		}
 		&:active {
 			color: $green400;
+			&:after {
+				border-bottom: 1px solid $green400;
+			}
 		}
 	}
 }

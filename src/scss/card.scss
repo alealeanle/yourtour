@@ -13,21 +13,16 @@
 		border-radius: 20px;
 	}
 	@media (any-hover: hover) {
-		// &:hover~img {
-		// 	scale: 1.2;
-		// }
-		&:hover ~ * > &__image {    // стиль для build 1/2
+		&:hover~img {
 			scale: 1.2;
 		}
+		// стиль для build 1/2
+		// &:hover ~ * > &__image {
+		// 	scale: 1.2;
+		// }
+		//
 		&:hover &__details:before {
-			content: "";
-			left: -20px;
-			width: 199px;
-			height: 42px;
-			position: absolute;
-			z-index: -1;
 			background-color: $green400;
-			border-radius: 50px;
 		}
 	}
 	&:active &__details:before {
@@ -107,6 +102,17 @@
 		color: $white;
 		border-radius: 50px;
 		position: relative;
+		&:before {
+			content: "";
+			left: -20px;
+			width: 199px;
+			height: 42px;
+			position: absolute;
+			z-index: -1;
+			background-color: transparent;
+			border-radius: 50px;
+			transition: all 0.3s ease 0s;
+		}
 		@media (max-width: $md5+px) {
 			font-size: 16px;
 			line-height: 142%;
@@ -120,12 +126,14 @@
 		top: 478px;
 		right: 60px;
 		@media (any-hover: hover) {
-			// &:hover~img {
-			// 	scale: 1.2;
-			// }
-			&:hover ~ * > .card__image {    // стиль для build 2/2
+			&:hover~img {
 				scale: 1.2;
 			}
+			// стиль для build 2/2
+			// &:hover ~ * > .card__image {
+			// 	scale: 1.2;
+			// }
+			//
 		}
 		@media (max-width: $md4+px) {
 			gap: 23px;
@@ -135,19 +143,34 @@
 		}
 	}
 	&__site {
+		position: relative;
 		font-size: 20px;
 		line-height: 142%;
 		color: $white;
+		&:after {
+			content: "";
+			position: absolute;
+			width: 100%;
+			height: 100%;
+			left: 0;
+			border-bottom: 1px solid transparent;
+			transition: all 0.3s ease 0s;
+		}
 		@media (max-width: $md4+px) {
 			font-size: 16px;
 		}
 		@media (any-hover: hover) {
 			&:hover {
-				text-decoration: underline;
+				&:after {
+					border-bottom: 1px solid $white;
+				}
 			}
 		}
 		&:active {
 			color: $orange200;
+			&:after {
+				border-bottom: 1px solid $orange200;
+			}
 		}
 	}
 	&__image {

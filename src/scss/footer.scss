@@ -34,14 +34,26 @@
 .socials-footer {
 	display: flex;
 	& a {
+		position: relative;
 		display: flex;
 		align-items: center;
 		font-size: 20px;
 		line-height: 142%;
 		color: $black;
+		& span:after {
+			content: "";
+			position: absolute;
+			width: 70%;
+			height: 100%;
+			right: 0;
+			border-bottom: 2px solid transparent;
+			transition: all 0.3s ease 0s;
+		}
 		@media (any-hover: hover) {
-			&:hover span {
-				text-decoration: underline;
+			&:hover {
+				& span:after {
+					border-bottom: 1px solid $black;
+				}
 			}
 		}
 		@media (max-width: $md5+px) {

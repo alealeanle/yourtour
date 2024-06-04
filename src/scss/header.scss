@@ -71,12 +71,24 @@
 		}
 	}
 	&__tel {
+		position: relative;
 		color: $white;
 		font-size: 20px;
 		line-height: 142%;
+		&:after {
+			content: "";
+			position: absolute;
+			width: 100%;
+			height: 100%;
+			left: 0;
+			border-bottom: 1px solid transparent;
+			transition: all 0.3s ease 0s;
+		}
 		@media (any-hover: hover) {
 			&:hover {
-				text-decoration: underline;
+				&:after {
+					border-bottom: 1px solid $white;
+				}
 			}
 		}
 		@media (max-width: $md3+px) {
@@ -106,9 +118,20 @@
 		}
 	}
 	&__link {
+		position: relative;
 		color: $white;
 		font-size: 20px;
 		line-height: 142%;
+		&:after {
+			content: "";
+			position: absolute;
+			width: 100%;
+			height: 100%;
+			left: 0;
+			bottom: -1px;
+			border-bottom: 1px solid transparent;
+			transition: all 0.3s ease 0s;
+		}
 		@media (max-width: $md3+px) {
 			font-size: 18px;
 		}
@@ -117,7 +140,9 @@
 		}
 		@media (any-hover: hover) {
 			&:hover {
-				border-bottom: 1px solid $white;
+				&:after {
+					border-bottom: 1px solid $white;
+				}
 			}
 		}
 	}
@@ -133,7 +158,16 @@
 	}
 	@media (any-hover: hover) {
 		& ul a:hover {
-			border-bottom: 1px solid $black;
+			&:after {
+				border-bottom: 1px solid $black;
+			}
+		}
+		& .header__tel {
+			&:hover {
+				&:after {
+					border-bottom: 1px solid $black;
+				}
+			}
 		}
 	}
 }
