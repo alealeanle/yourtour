@@ -27,48 +27,53 @@
 
 ._icon-vk:before {
   content: "\e900";
+	margin-right: 10px;
   color: #a6a6a6;
 	font-size: 26px;
-	margin-right: 10px;
+
 	@media (max-width: 479.98px) {
 		margin-right: 0px;
 	}
 }
 ._icon-inst:before {
   content: "\e901";
+	margin-right: 10px;
   color: #a6a6a6;
 	font-size: 26px;
-	margin-right: 10px;
+
 	@media (max-width: 479.98px) {
 		margin-right: 0px;
 	}
 }
 ._icon-fb:before {
   content: "\e902";
+	margin-right: 10px;
   color: #a6a6a6;
 	font-size: 26px;
-	margin-right: 10px;
+
 	@media (max-width: 479.98px) {
 		margin-right: 0px;
 	}
 }
 ._icon-arrow:after {
   content: "\e903";
+	margin-left: 16px;
   color: #fff;
 	font-size: 16px;
-	margin-left: 16px;
 }
 ._icon-dropdown:after {
   content: "\e904";
 	position: absolute;
 	top: 57px;
 	right: 4%;
-	color: #1b1f2b;
 	font-size: 25px;
+	color: #1b1f2b;
+
 	@media (max-width: 1279.98px) {
 		top: 57px;
 		right: 5%;
 	}
+	
 	@media (max-width: 767.98px) {
 		top: 39px;
 		right: 4%;

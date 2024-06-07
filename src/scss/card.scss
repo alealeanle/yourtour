@@ -1,17 +1,18 @@
 .card {
 	position: relative;
+	z-index: 2;
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
 	padding: 50px;
 	border-radius: 50px;
-	position: relative;
-	z-index: 2;
 	cursor: pointer;
-	@media (max-width: $md5+px) {
+
+	@media (max-width: $md4) {
 		padding: 25px;
 		border-radius: 20px;
 	}
+
 	@media (any-hover: hover) {
 		&:hover~img {
 			scale: 1.2;
@@ -21,110 +22,139 @@
 		// 	scale: 1.2;
 		// }
 		//
+
 		&:hover &__details:before {
 			background-color: $green400;
 		}
 	}
+
 	&:active &__details:before {
 		content: "";
+		position: absolute;
 		left: -20px;
+		z-index: -1;
 		width: 199px;
 		height: 42px;
-		position: absolute;
-		z-index: -1;
 		background-color: $orange200;
 		border-radius: 50px;
 	}
+
 	&__main {
 		padding-bottom: 20px;
 	}
+
 	&__title {
 		font-size: 35px;
 		font-weight: 500;
 		line-height: 122%;
 		color: $white;
-		@media (min-width: $md2+px) {
+
+		@media (min-width: $md2) {
 			margin-right: 50px;
 		}
-		@media (max-width: $md5+px) {
+
+		@media (max-width: $md5) {
+			margin-bottom: 13px;
 			font-size: 23px;
 			font-weight: 700;
 			line-height: 120%;
 			letter-spacing: 0.92px;
-			margin-bottom: 13px;
 		}
 	}
+
 	&__price {
+		margin-top: 16px;
 		font-size: 17px;
 		line-height: 142%;
 		letter-spacing: -0.17px;
 		color: $white;
-		margin-top: 16px;
-		@media (max-width: $md5+px) {
+
+		@media (max-width: $md5) {
+			margin-top: 13px;
 			font-size: 16px;
 			letter-spacing: -0.16px;
-			margin-top: 13px;
 		}
 	}
+
 	&__text{
 		max-width: 554px;
+		margin-top: 36px;
 		font-size: 20px;
 		line-height: 142%;
 		color: $white;
-		margin-top: 36px;
-		@media (max-width: $md4+px) {
+
+		@media (max-width: $md4) {
 			font-size: 16px;
 		}
-		@media (max-width: $md5+px) {
+
+		@media (max-width: $md5) {
 			margin-top: 20px;
 		}
 	}
+
 	&__list {
-	margin-top: 25px;
-	margin-left: 30px;
-	@media (max-width: $md2+px) {
-		margin-top: 26px;
+		margin-top: 25px;
+		margin-left: 30px;
+
+		@media (max-width: $md2) {
+			margin-top: 26px;
+		}
+		
+		@media (max-width: $md4) {
+			margin-left: 26px;
+		}
 	}
-	@media (max-width: $md4+px) {
-		margin-left: 26px;
-	}
-	}
+
 	&__item {
 		list-style: disc;
 	}
+
 	&__details {
-		width: 199px;
+		position: relative;
 		display: flex;
 		align-items: center;
+		width: 199px;
 		font-size: 23px;
 		line-height: 122%;
 		font-weight: 700;
 		color: $white;
 		border-radius: 50px;
-		position: relative;
+
+		@media (max-width: $md5) {
+			font-size: 16px;
+			line-height: 142%;
+		}
+
 		&:before {
 			content: "";
+			position: absolute;
 			left: -20px;
+			z-index: -1;
 			width: 199px;
 			height: 42px;
-			position: absolute;
-			z-index: -1;
 			background-color: transparent;
 			border-radius: 50px;
 			transition: all 0.3s ease 0s;
 		}
-		@media (max-width: $md5+px) {
-			font-size: 16px;
-			line-height: 142%;
-		}
 	}
+
 	&__social {
 		position: absolute;
-		display: flex;
-		gap: 37px;
-		z-index: 2;
 		top: 478px;
 		right: 60px;
+		z-index: 2;
+		gap: 37px;
+		display: flex;
+
+		@media (max-width: $md4) {
+			gap: 23px;
+		}
+
+		@media (max-width: 627px) {
+			display: none;
+		}
+	}
+
 		@media (any-hover: hover) {
 			&:hover~img {
 				scale: 1.2;
@@ -135,54 +165,56 @@
 			// }
 			//
 		}
-		@media (max-width: $md4+px) {
-			gap: 23px;
-		}
-		@media (max-width: 627px) {
-			display: none;
-		}
-	}
+
 	&__site {
 		position: relative;
 		font-size: 20px;
 		line-height: 142%;
 		color: $white;
+
+		@media (max-width: $md4) {
+			font-size: 16px;
+		}
+
 		&:after {
 			content: "";
 			position: absolute;
+			left: 0;
 			width: 100%;
 			height: 100%;
-			left: 0;
 			border-bottom: 1px solid transparent;
 			transition: all 0.3s ease 0s;
 		}
-		@media (max-width: $md4+px) {
-			font-size: 16px;
-		}
+
 		@media (any-hover: hover) {
 			&:hover {
+
 				&:after {
 					border-bottom: 1px solid $white;
 				}
 			}
 		}
+
 		&:active {
 			color: $orange200;
+
 			&:after {
 				border-bottom: 1px solid $orange200;
 			}
 		}
 	}
+
 	&__image {
 		position: absolute;
-		width: 100%;
-		height: 100%;
 		top: 0;
 		left: 0;
 		object-fit: cover;
+		width: 100%;
+		height: 100%;
 		border-radius: 50px;
 		transition: scale 0.3s ease 0s;
-		@media (max-width: $md5+px) {
+		
+		@media (max-width: $md4) {
 			border-radius: 20px;
 		}
 	}

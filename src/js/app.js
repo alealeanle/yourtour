@@ -2,8 +2,7 @@ import * as functions from "./modules/functions.js";
 
 functions.isWebp();
 
-/////     SCROLL       ///////////////////////////////////////////
-
+//SCROLL
 const header = document.querySelector('.header');
 const img = document.querySelector('.header__logoImg');
 const imgDark = document.querySelector('.header__logoDarkImg');
@@ -25,8 +24,7 @@ window.addEventListener('scroll', () => {
 	}
 })
 
-/////     MENU ACTIVE        ///////////////////////////////////////
-
+// MENU ACTIVE
 const menuList = document.querySelector('.menu-block');
 const menuLinks = document.querySelectorAll('.menu-block__item');
 
@@ -39,8 +37,7 @@ menuList.addEventListener('click', (e) => {
 	}
 })
 
-/////     ANCHORS     ///////////////////////////////////////////////
-
+//ANCHORS
 function smoothScrollWithOffset(event) {
 	event.preventDefault();
 	const targetId = event.currentTarget.getAttribute("href").substring(1);

@@ -4,7 +4,7 @@ import { plugins } from "./gulp/config/plugins.js";
 
 // Передаем значения в глобальную переменную
 global.app = {
-	isBuild: process.argv.includes('--build'), // встроенная переменная process.argv, которая может хранить флаг
+	isBuild: process.argv.includes('--build'),
 	isDev: !process.argv.includes('--build'),
 	path: path,
 	gulp: gulp,
@@ -23,17 +23,14 @@ import { otfToTtf, ttfToWoff, fontsStyle } from "./gulp/tasks/fonts.js";
 import { zip } from "./gulp/tasks/zip.js";
 import { ftp } from "./gulp/tasks/ftp.js";
 
-//Наблюдатель за изменениями в файлах
+//Наблюдатель
 function watcher() {
-	// gulp.watch(path.watch.files, reset);
 	gulp.watch(path.watch.files, copy);
 	gulp.watch(path.watch.html, html);// вместо последнего html - gulp.series(html, ftp) - и все автоматически при изменениях будет заливаться на сервер
 	gulp.watch(path.watch.scss, scss);
 	gulp.watch(path.watch.js, js);
 	gulp.watch(path.watch.images, images);
-
 }
-
 
 // Последовательность обработки шрифтов
 const fonts = gulp.series(otfToTtf, ttfToWoff, fontsStyle);
