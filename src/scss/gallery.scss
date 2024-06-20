@@ -1,8 +1,5 @@
 .gallery {
 
-	&__container {
-	}
-
 	&__header {
 		@media (max-width: $md5) {
 			margin: 0px 0px 47px;
@@ -14,10 +11,6 @@
 
 		@media (max-width: $md2) {
 			padding: 0px 20px;
-		}
-
-		@media (max-width: $md5) {
-			display: block;
 		}
 	}
 

@@ -1,17 +1,11 @@
 .choose {
 
-	&__container {
-	}
-
 	&__header {
 		margin-bottom: 103px;
 
 		@media (max-width: $md4) {
 			margin-bottom: 50px;
 		}
-	}
-
-	&__body{
 	}
 }
 
@@ -142,7 +136,7 @@
 
 	&__card {
 		min-height: 531px;
-		background: linear-gradient(0deg, rgba(0, 0, 0, 0.40) 0%, rgba(0, 0, 0, 0.06) 48.44%, rgba(0, 0, 0, 0.50) 100%);
+		background: linear-gradient(0deg, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0) 48.4%, rgba(0, 0, 0, 0.5) 100%);
 
 		@media (max-width: $md2) {
 			padding: 50px 35px 50px;

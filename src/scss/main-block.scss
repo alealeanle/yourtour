@@ -5,7 +5,7 @@
 	min-height: 720px;
 	height: 100vh;
 	padding: 207px 0px 119px;
-	background: linear-gradient(180deg, rgba(0, 0, 0, 0.40) 0%, rgba(0, 0, 0, 0.00) 39.9%), linear-gradient(0deg, rgba(0, 0, 0, 0.30) 0%, rgba(0, 0, 0, 0.30) 100%), url(../img/background.jpg) lightgray 50% / cover no-repeat;
+	background: linear-gradient(180deg, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0.00) 40%), linear-gradient(0deg, rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0.3) 100%), url(../img/background.jpg) lightgray 50% / cover no-repeat;
 	
 	@media (max-width: $md3) {
 		min-height: 624px;
@@ -22,15 +22,12 @@
 		min-height: 487px;
 	}
 
-	&__container {
-	}
-
 	&__title {
 		margin: 0px auto 50px;
 		font-size: 96px;
 		font-weight: 700;
 		line-height: 109%;
-		letter-spacing: 1.92px;
+		letter-spacing: 1.9px;
 		text-align: center;
 		color: $white;
 
@@ -46,7 +43,7 @@
 			margin: 0px auto 40px;
 			font-size: 34px;
 			line-height: 112%;
-			letter-spacing: 0.68px;
+			letter-spacing: 0.7px;
 		}
 	}
 
@@ -86,22 +83,22 @@
 		align-items: center;
 		max-width: 118px;
 		min-height: 34px;
-		margin: 0px auto 0px;
+		margin: 0px auto;
 		padding: 5px 20px;
 		font-size: 17px;
 		line-height: 142%;
-		letter-spacing: -0.17px;
+		letter-spacing: -0.2px;
 		text-align: center;
 		color: $black;
 		background-color: $white;
 		border-radius: 10px;
 		transition: all 0.3s ease 0s;
 
-		@media (max-width: $md5+px) {
+		@media (max-width: $md5) {
 			max-width: 114px;
 			min-height: 33px;
 			font-size: 16px;
-			letter-spacing: -0.16px;
+			letter-spacing: -0.2px;
 		}
 
 		@media (any-hover: hover) {

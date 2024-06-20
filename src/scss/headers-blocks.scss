@@ -24,12 +24,13 @@
 		@media (max-width: $md5) {
 			font-size: 34px;
 			line-height: 112%;
-			letter-spacing: 0.68px;
+			letter-spacing: 0.7px;
 			margin-bottom: 20px;
 		}
-	}
 
-	&__menu {
+		@media (max-width: 349px) {
+			font-size: 30px;
+		}
 	}
 
 	&__text {

@@ -1,9 +1,8 @@
 .reviews {
-
-	&__container {
-	}
-
-	&__header {
+	.reviews__header{
+		@media (max-width: $md5) {
+			margin-bottom: 50px;
+		}
 	}
 
 	&__body {
@@ -15,13 +14,6 @@
 		@media (max-width: $md2) {
 			gap: 18px;
 		}
-
-		@media (max-width: $md5) {
-			gap: 8px;
-		}
-	}
-
-	&__item {
 	}
 }
 
@@ -48,7 +40,7 @@
 	}
 
 	@media (max-width: $md5) {
-		padding: 25px 20px 30px;
+		padding: 20px;
 	}
 
 	&__text {
@@ -60,7 +52,7 @@
 		@media (max-width: $md5) {
 			margin-bottom: 40px;
 			font-size: 16px;
-			line-height: 142%;
+			line-height: 144%;
 		}
 	}
 
@@ -74,9 +66,6 @@
 		}
 	}
 
-	&__description {
-	}
-
 	&__name {
 		margin-bottom: 8px;
 		font-size: 35px;
@@ -86,20 +75,19 @@
 		@media (max-width: $md5) {
 			font-size: 23px;
 			line-height: 120%;
-			letter-spacing: 0.92px;
+			letter-spacing: 0.9px;
 		}
 	}
 
 	&__tour {
 		font-size: 17px;
 		line-height: 142%;
-		letter-spacing: -0.17px;
+		letter-spacing: -0.2px;
 		color: $gray300;
 
 		@media (max-width: $md5) {
 			font-size: 16px;
 			line-height: 142%;
-			letter-spacing: -0.16px;
 		}
 	}
 
@@ -109,29 +97,15 @@
 		border-radius: 100px;
 
 		&_1 {
-			background: url(../img/reviews/review_1.jpg) lightgray -21.313px 0px / 149.953% 100% no-repeat;
+			background: url(../img/reviews/review_1.jpg) lightgray -21px 0px / 150% 100% no-repeat;
 			background-size: cover;
 			background-position: center;
 		}
 
 		&_2 {
-			background: url(../img/reviews/review_2.jpg) lightgray 0px -4.492px / 100% 150% no-repeat;
+			background: url(../img/reviews/review_2.jpg) lightgray 0px -4.5px / 100% 150% no-repeat;
 			background-size: cover;
 			background-position: center;
 		}
-	}
-}
-
-._revH {
-
-	@media (max-width: 349px) {
-		margin-left: -15px;
-	}
-}
-
-._rev {
-
-	@media (max-width: $md5) {
-		padding: 5px 3px 0px 0px;
 	}
 }
